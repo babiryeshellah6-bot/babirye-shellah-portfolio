@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Babirye Shellah · CS Portfolio</title>
-
+  <!-- Google Fonts + Font Awesome for icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
@@ -19,24 +19,24 @@
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background: #f9fafc;
-      color: #1e293b hidden;
+      color: #1e293b;
       line-height: 1.6;
       scroll-behavior: smooth;
-;
       padding: 2rem 1rem;
     }
 
     .container {
       max-width: 1100px;
-      margin     : 0 auto;
+      margin: 0 auto;
       background: #ffffff;
       border-radius: 2.5rem;
-      box-shadow:  padding0 25px 50px -12px rgba(0, 0, 0, 0.15);
-      overflow:: 2.5rem 2.8rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      padding: 2.5rem 2.8rem;
       transition: all 0.2s;
     }
 
-    
+    /* Header / hero */
     .hero {
       display: flex;
       flex-wrap: wrap;
@@ -108,7 +108,7 @@
       margin-right: 0.4rem;
     }
 
-    
+    /* Sections */
     section {
       margin-bottom: 2.5rem;
     }
@@ -136,7 +136,7 @@
       border-radius: 12px;
     }
 
-    
+    /* About / bio */
     .about-text {
       color: #334155;
       font-size: 1.05rem;
@@ -232,7 +232,7 @@
       font-weight: 500;
     }
 
-    
+    /* Education / contact */
     .education-item {
       display: flex;
       flex-wrap: wrap;
@@ -376,110 +376,101 @@
 </head>
 <body>
   <div class="container">
-    
+    <!-- HERO SECTION -->
     <div class="hero">
       <div class="avatar" aria-label="Avatar initials BS">BS</div>
       <div class="hero-text">
         <h1>Babirye Shellah</h1>
         <div class="subhead">
-          <span><i class="fas fa-graduation-cap"></i> Computer Science Student</span>
-          <span><i class="fas fa-map-pin"></i> Makerere University</span>
+          <span><i class="fas fa-graduation-cap"></i> First-Year CS Student</span>
+          <span><i class="fas fa-map-pin"></i> University of Nairobi</span>
         </div>
         <div class="badge">
-          <i class="fas fa-code"></i> passionate about AI, web & problem solving
+          <i class="fas fa-seedling"></i> learning to code, one step at a time
         </div>
       </div>
     </div>
 
-    
+    <!-- ABOUT / BIO -->
     <section>
       <div class="section-title">
         <i class="fas fa-user-astronaut"></i>
         <span>About me</span>
       </div>
       <p class="about-text">
-        I'm Babirye Shellah, a final-year Computer Science student with a strong foundation in 
-        algorithms, data structures, and software development. I love turning ideas into 
-        clean, functional code — whether it's a web app, a machine learning model, or 
-        a simple automation script. I'm eager to apply my skills in real-world projects, 
-        learn from collaborative teams, and contribute to meaningful technology.
+        I'm Babirye Shellah, a first-year Computer Science student at the University of Nairobi.
+        I'm new to programming and excited to learn — currently building my foundation in
+        Python, problem solving, and web basics. I enjoy taking on small challenges and
+        growing my skills every day.
       </p>
     </section>
 
-    
+    <!-- SKILLS -->
     <section>
       <div class="section-title">
         <i class="fas fa-cog"></i>
-        <span>Technical toolkit</span>
+        <span>Currently learning</span>
       </div>
       <div class="skills-grid">
-        <div class="skill-item"><i class="fab fa-python"></i> Python</div>
-        <div class="skill-item"><i class="fab fa-java"></i> Java</div>
-        <div class="skill-item"><i class="fab fa-js"></i> JavaScript (ES6+)</div>
-        <div class="skill-item"><i class="fab fa-react"></i> React</div>
-        <div class="skill-item"><i class="fas fa-database"></i> SQL / MongoDB</div>
-        <div class="skill-item"><i class="fas fa-code-branch"></i> Git & GitHub</div>
-        <div class="skill-item"><i class="fas fa-brain"></i> Data Structures & Algorithms</div>
-        <div class="skill-item"><i class="fas fa-chart-line"></i> Machine Learning (basics)</div>
+        <div class="skill-item"><i class="fab fa-python"></i> Python (beginner)</div>
         <div class="skill-item"><i class="fab fa-html5"></i> HTML5 & CSS3</div>
-        <div class="skill-item"><i class="fas fa-terminal"></i> Linux / CLI</div>
+        <div class="skill-item"><i class="fas fa-code-branch"></i> Git & GitHub</div>
+        <div class="skill-item"><i class="fas fa-brain"></i> Problem Solving</div>
+        <div class="skill-item"><i class="fas fa-calculator"></i> Discrete Math</div>
+        <div class="skill-item"><i class="fas fa-keyboard"></i> Typing & CLI basics</div>
       </div>
     </section>
 
-  
+    <!-- PROJECTS -->
     <section>
       <div class="section-title">
         <i class="fas fa-laptop-code"></i>
-        <span>Academic & personal projects</span>
+        <span>Practice projects</span>
       </div>
       <div class="projects-grid">
-      
+        <!-- project 1 -->
         <div class="project-card">
-          <div class="project-icon"><i class="fas fa-tasks"></i></div>
-          <h3>StudySync.</</h3>
-          <p>A collaborative task manager for students — group projects, deadlines, and shared checklists. Built with React and Firebase.</p>
+          <div class="project-icon"><i class="fas fa-globe"></i></div>
+          <h3>This Portfolio</h3>
+          <p>My first website — built with plain HTML and CSS to practice layout and styling.</p>
           <div class="project-tags">
-            <span>React</span>
-            <span>Firebase</span>
-            <span>Tailwind</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
           </div>
         </div>
-      
+        <!-- project 2 -->
         <div class="project-card">
-          <div class="project-icon"><i class="fas fa-robot"></i></div>
-          <h3>Campus Chatbot</h3>
-          <p>Python-based assistant that answers common university questions using NLP and a simple intent classifierp>
+          <div class="project-icon"><i class="fas fa-calculator"></i></div>
+          <h3>Simple Calculator</h3>
+          <p>A basic Python calculator that performs arithmetic operations — my first coding project.</p>
           <div class="project-tags">
             <span>Python</span>
-            <span>NLTK</span>
-            <span>Flask</span>
+            <span>Beginner</span>
           </div>
         </div>
-        
+        <!-- project 3 -->
         <div class="project-card">
-          <div class="project-icon"><i class="fas fa-chart-pie"></i></div>
-          <h3>Grade Analytics</h3>
-          <p>Java desktop tool that visualizes grade distribution and predicts performance trends from CSV data.</p>
+          <div class="project-icon"><i class="fas fa-list-check"></i></div>
+          <h3>To-Do List</h3>
+          <p>A small to-do list app to practice JavaScript and DOM manipulation.</p>
           <div class="project-tags">
-            <span>Java</span>
-            <span>JavaFX</span>
-            <span>Weka</span>
+            <span>JavaScript</span>
+            <span>HTML</span>
           </div>
         </div>
         <!-- project 4 -->
         <div class="project-card">
-          <div class="project-icon"><i class="fas fa-globe"></i></div>
-          <h3>Shellah's portfolio</h3>
-          <p>This very portfolio website — a clean, responsive single-page site built with vanilla HTML & CSS.</p>
+          <div class="project-icon"><i class="fas fa-rocket"></i></div>
+          <h3>More coming soon…</h3>
+          <p>As I learn more, I'll add bigger and better projects here. Stay tuned!</p>
           <div class="project-tags">
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>Responsive</span>
+            <span>In progress</span>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- EDUCATION -->
     <section>
       <div class="section-title">
         <i class="fas fa-university"></i>
@@ -487,40 +478,36 @@
       </div>
       <div class="education-item">
         <span class="edu-degree">BSc. Computer Science</span>
-        <span class="edu-school">Makerere University · Kampala</span>
-        <span class="edu-year">2022 – 2025 (expected)</span>
+        <span class="edu-school">University of Nairobi · Nairobi, Kenya</span>
+        <span class="edu-year">2026 – 2029 (expected)</span>
       </div>
       <div class="education-item" style="border-left-color: #8b5cf6;">
-        <span class="edu-degree">Relevant coursework</span>
-        <span class="edu-school">Data Structures, Algorithms, Databases, AI, Web Dev, Operating Systems</span>
+        <span class="edu-degree">Currently learning</span>
+        <span class="edu-school">Programming Fundamentals, Discrete Math, Intro to Computer Systems, Web Basics</span>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section>
       <div class="section-title">
         <i class="fas fa-paper-plane"></i>
         <span>Let's connect</span>
       </div>
       <div class="contact-links">
-        <a href="mailto:shellah.babirye@example.edu" class="contact-item">
-          <i class="fas fa-envelope"></i> shellah.babirye@example.edu
+        <a href="mailto:babiryeshellah6@gmail.com" class="contact-item">
+          <i class="fas fa-envelope"></i> babiryeshellah6@gmail.com
         </a>
         <a href="#" class="contact-item" target="_blank" rel="noopener">
-          <i class="fab fa-github"></i> github.com/shellah-b
-        </a>
-        <a href="#" class="contact-item" target="_blank" rel="noopener">
-          <i class="fab fa-linkedin"></i> linkedin.com/in/babirye-shellah
-        </a>
-        <a href="#" class="contact-item" target="_blank" rel="noopener">
-          <i class="fab fa-twitter"></i> @shellah_codes
+          <i class="fab fa-github"></i> github.com/babiryeshellah6-bot
         </a>
       </div>
     </section>
 
+    <!-- FOOTER -->
     <div class="footer-note">
       <i class="fas fa-crown" style="color: #2563eb;"></i> 
-      Babirye Shellah · CS student · built with <i class="fas fa-heart"></i> for learning
+      Babirye Shellah · First-year CS student · built with <i class="fas fa-heart"></i> for learning
     </div>
   </div>
 </body>
-</html> 
+</html>
