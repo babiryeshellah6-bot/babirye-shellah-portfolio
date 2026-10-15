@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Babirye Shellah | Web Developer</title>
     
-    <!-- Styling is included right here -->
+    <!-- Importing a clean modern font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        /* Import a clean modern font */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
-        /* Reset and base styles */
+        /* Reset styles */
         * {
             margin: 0;
             padding: 0;
@@ -18,81 +17,92 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            color: #333;
-            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+            background: #0f172a; /* Deep dark blue background */
+            color: #cbd5e1; /* Light grey text */
+            line-height: 1.7;
             padding: 40px 20px;
+            display: flex;
+            justify-content: center;
             min-height: 100vh;
         }
 
-        /* Main Card Container */
-        .card {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-            padding: 50px 40px;
-        }
-
-        /* Hero Section */
-        .hero {
+        /* Main Container */
+        .container {
+            max-width: 650px;
+            width: 100%;
             text-align: center;
+        }
+
+        /* Header Section */
+        .hero {
             margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .profile-pic {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #4a90e2;
-            box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
-            margin-bottom: 20px;
-        }
-
+        /* Gradient Text for Name */
         .hero h1 {
-            font-size: 2.5rem;
-            color: #1a202c;
+            font-size: 3rem;
+            font-weight: 700;
             margin-bottom: 5px;
+            background: linear-gradient(135deg, #60a5fa, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             letter-spacing: -1px;
         }
 
         .tagline {
-            font-size: 1.1rem;
-            color: #4a90e2;
-            font-weight: 700;
+            font-size: 0.95rem;
+            color: #94a3b8;
+            font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 15px;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        /* Glowing Profile Picture */
+        .profile-pic {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #a855f7;
+            box-shadow: 0 0 30px rgba(168, 85, 247, 0.6); /* Purple glow */
+            margin-bottom: 25px;
         }
 
         .intro {
-            font-size: 1.1rem;
-            color: #4a5568;
-            max-width: 600px;
+            font-size: 1.05rem;
+            color: #94a3b8;
+            max-width: 500px;
             margin: 0 auto;
         }
 
-        /* Sections */
+        /* General Section Styling */
         section {
+            text-align: left;
             margin-bottom: 45px;
+            background: rgba(30, 41, 59, 0.4); /* Slight dark card background */
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(168, 85, 247, 0.2); /* Subtle purple border */
         }
 
         section h2 {
-            font-size: 1.6rem;
-            color: #1a202c;
+            font-size: 1.5rem;
+            color: #e2e8f0;
             margin-bottom: 20px;
-            border-bottom: 3px solid #ebf4ff;
+            border-bottom: 2px solid rgba(168, 85, 247, 0.4);
             padding-bottom: 10px;
             display: inline-block;
         }
 
         section p {
             margin-bottom: 15px;
-            color: #4a5568;
-            font-size: 1.05rem;
+            color: #94a3b8;
+            font-size: 0.95rem;
         }
 
         /* Skills Tags */
@@ -101,105 +111,93 @@
             flex-wrap: wrap;
             gap: 12px;
             list-style: none;
+            margin-top: 15px;
         }
 
         .skill-list li {
-            background-color: #ebf4ff;
-            color: #2b6cb0;
+            background-color: rgba(168, 85, 247, 0.15); /* Faint purple */
+            color: #c084fc; /* Bright purple text */
             padding: 8px 18px;
-            border-radius: 30px;
-            font-size: 0.95rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
             font-weight: 600;
-            transition: transform 0.2s;
-        }
-
-        .skill-list li:hover {
-            transform: translateY(-2px);
-            background-color: #dbeafe;
+            border: 1px solid rgba(168, 85, 247, 0.3);
         }
 
         /* Projects Grid */
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
+            grid-template-columns: 1fr;
+            gap: 15px;
         }
 
         .project-card {
-            background-color: #f8fafc;
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-            transition: transform 0.3s, box-shadow 0.3s;
+            background: rgba(15, 23, 42, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+            transition: transform 0.2s, border-color 0.2s;
         }
 
         .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-            border-color: #cbd5e1;
+            transform: translateY(-3px);
+            border-color: #a855f7;
         }
 
         .project-card h3 {
-            font-size: 1.15rem;
-            color: #2d3748;
-            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: #e2e8f0;
+            margin-bottom: 8px;
         }
 
         .project-card p {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             margin: 0;
-            color: #718096;
+            color: #94a3b8;
         }
 
         /* Contact Button */
         .contact {
             text-align: center;
-            background-color: #f8fafc;
-            padding: 40px;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-        }
-
-        .contact p {
-            margin-bottom: 20px;
         }
 
         .btn {
             display: inline-block;
-            background-color: #4a90e2;
+            background: linear-gradient(135deg, #8b5cf6, #d946ef);
             color: #ffffff;
             padding: 14px 35px;
-            border-radius: 8px;
+            border-radius: 30px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.05rem;
-            transition: background-color 0.3s, transform 0.2s;
-            box-shadow: 0 4px 6px rgba(74, 144, 226, 0.2);
+            font-size: 1rem;
+            margin-top: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 5px 15px rgba(139, 92, 246, 0.4);
         }
 
         .btn:hover {
-            background-color: #357abd;
             transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(74, 144, 226, 0.3);
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6);
         }
 
         /* Mobile adjustments */
         @media (max-width: 600px) {
-            .card {
-                padding: 30px 20px;
-            }
             .hero h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
-            .grid {
-                grid-template-columns: 1fr;
+            .profile-pic {
+                width: 140px;
+                height: 140px;
+            }
+            section {
+                padding: 20px;
             }
         }
     </style>
 </head>
 <body>
 
-    <div class="card">
+    <div class="licontainer">
 
         <header class="hero">
             <img src="profile.jpeg" alt="Babirye Shellah" class="profile-pic">
@@ -232,7 +230,7 @@
                 <li>C Programming</li>
                 <li>Responsive Design</li>
                 <li>Git & GitHub</li>
-                <li>UI Design</li>
+                <li>UI Design</>
                 <li>Problem Solving</li>
             </ul>
         </section>
