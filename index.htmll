@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Babirye Shelah's Portfolio</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 50px; 
+            background-color: #f4f4f9;
+        }
+        img { 
+            max-width: 400px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, I'm Babirye Shelah!</h1>
+    <p>Welcome to my portfolio.</p>
+    <img src="WhatsApp Image 2026-10-15 at 11.56.52 AM.jpeg" alt="My Picture">
+</body>
+</html>
