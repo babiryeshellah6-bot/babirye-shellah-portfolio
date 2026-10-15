@@ -3,262 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Babirye Shellah | Web Developer</title>
-    
-    <!-- Importing a clean modern font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <title>Babirye Shellah</title>
     <style>
-        /* Reset styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* Simple, guaranteed styling */
         body {
-            font-family: 'Poppins', sans-serif;
-            background: #0f172a; /* Deep dark blue background */
-            color: #cbd5e1; /* Light grey text */
-            line-height: 1.7;
-            padding: 40px 20px;
-            display: flex;
-            justify-content: center;
-            min-height: 100vh;
-        }
-
-        /* Main Container */
-        .container {
-            max-width: 650px;
-            width: 100%;
+            background-color: #0f172a;
+            color: #cbd5e1;
+            font-family: Arial, sans-serif;
             text-align: center;
+            padding: 50px 20px;
+            margin: 0;
         }
-
-        /* Header Section */
-        .hero {
-            margin-bottom: 50px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
         }
-
-        /* Gradient Text for Name */
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 700;
+        h1 {
+            font-size: 2.5rem;
+            color: #d8b4fe; /* Light purple */
             margin-bottom: 5px;
-            background: linear-gradient(135deg, #60a5fa, #a855f7, #ec4899);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: -1px;
         }
-
         .tagline {
-            font-size: 0.95rem;
+            font-size: 1rem;
             color: #94a3b8;
-            font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 30px;
         }
-
-        /* Glowing Profile Picture */
-        .profile-pic {
-            width: 170px;
-            height: 170px;
+        img {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
+            border: 4px solid #a855f7; /* Purple border */
+            box-shadow: 0 0 20px #a855f7; /* Purple glow */
             object-fit: cover;
-            border: 4px solid #a855f7;
-            box-shadow: 0 0 30px rgba(168, 85, 247, 0.6); /* Purple glow */
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
-
-        .intro {
-            font-size: 1.05rem;
-            color: #94a3b8;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        /* General Section Styling */
-        section {
-            text-align: left;
-            margin-bottom: 45px;
-            background: rgba(30, 41, 59, 0.4); /* Slight dark card background */
+        .box {
+            background-color: #1e293b;
             padding: 25px;
             border-radius: 15px;
-            border: 1px solid rgba(168, 85, 247, 0.2); /* Subtle purple border */
-        }
-
-        section h2 {
-            font-size: 1.5rem;
-            color: #e2e8f0;
+            border: 1px solid #a855f7;
             margin-bottom: 20px;
-            border-bottom: 2px solid rgba(168, 85, 247, 0.4);
+            text-align: left;
+        }
+        h2 {
+            color: #d8b4fe;
+            border-bottom: 1px solid #a855f7;
             padding-bottom: 10px;
-            display: inline-block;
+            margin-top: 0;
         }
-
-        section p {
-            margin-bottom: 15px;
-            color: #94a3b8;
-            font-size: 0.95rem;
-        }
-
-        /* Skills Tags */
-        .skill-list {
+        ul {
+            list-style: none;
+            padding: 0;
             display: flex;
             flex-wrap: wrap;
-            gap: 12px;
-            list-style: none;
-            margin-top: 15px;
+            gap: 10px;
         }
-
-        .skill-list li {
-            background-color: rgba(168, 85, 247, 0.15); /* Faint purple */
-            color: #c084fc; /* Bright purple text */
-            padding: 8px 18px;
+        li {
+            background-color: #4c1d95;
+            color: #e9d5ff;
+            padding: 8px 15px;
             border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            border: 1px solid rgba(168, 85, 247, 0.3);
-        }
-
-        /* Projects Grid */
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 15px;
-        }
-
-        .project-card {
-            background: rgba(15, 23, 42, 0.6);
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid #334155;
-            transition: transform 0.2s, border-color 0.2s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-3px);
-            border-color: #a855f7;
-        }
-
-        .project-card h3 {
-            font-size: 1.1rem;
-            color: #e2e8f0;
-            margin-bottom: 8px;
-        }
-
-        .project-card p {
             font-size: 0.9rem;
-            margin: 0;
-            color: #94a3b8;
         }
-
-        /* Contact Button */
-        .contact {
-            text-align: center;
-        }
-
         .btn {
             display: inline-block;
-            background: linear-gradient(135deg, #8b5cf6, #d946ef);
-            color: #ffffff;
-            padding: 14px 35px;
-            border-radius: 30px;
+            background-color: #a855f7;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            margin-top: 15px;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 5px 15px rgba(139, 92, 246, 0.4);
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6);
-        }
-
-        /* Mobile adjustments */
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            .profile-pic {
-                width: 140px;
-                height: 140px;
-            }
-            section {
-                padding: 20px;
-            }
+            font-weight: bold;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
-    <div class="licontainer">
+    <div class="container">
+        <h1>Babirye Shellah</h1>
+        <!-- 1. UPDATED TAGLINE -->
+        <p class="tagline">Computer Science Student @ University of Nairobi</p>
+        
+        <img src="profile.jpeg" alt="Babirye Shellah">
+        
+        <p style="margin-bottom: 40px;">
+            I build clean, modern websites and love turning ideas into real things on the screen.
+        </p>
 
-        <header class="hero">
-            <img src="profile.jpeg" alt="Babirye Shellah" class="profile-pic">
-            <h1>Babirye Shellah</h1>
-            <p class="tagline">Computer Science Student</p>
-            <p class="intro">
-                I build clean, modern websites and love turning ideas into real things on the screen.
-            </p>
-        </header>
-
-        <section class="about">
+        <div class="box">
             <h2>About Me</h2>
-            <p>
-                Hi, I'm Babirye Shellah, a Computer Science student.
-                I've been learning web development step by step: HTML, CSS, and how to
-                publish my work to the world using GitHub Pages.
-            </p>
-            <p>
-                I enjoy solving problems and the feeling of seeing a design come to life in the
-                browser. Every project teaches me something new, and I'm always looking for the
-                next thing to learn.
-            </p>
-        </section>
+            <!-- 2. UPDATED ABOUT ME -->
+            <p>Hi, I'm Babirye Shellah, a Computer Science student at the University of Nairobi. I've been learning web development step by step: HTML, CSS, and how to publish my work to the world using GitHub Pages.</p>
+            <p>I enjoy solving problems and the feeling of seeing a design come to life in the browser.</p>
+        </div>
 
-        <section class="skills">
+        <!-- 3. NEW EDUCATION BOX -->
+        <div class="box">
+            <h2>Education</h2>
+            <p><strong>University of Nairobi</strong><br>
+            B.S. in Computer Science</p>
+        </div>
+
+        <div class="box">
             <h2>Skills</h2>
-            <ul class="skill-list">
+            <ul>
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>C Programming</li>
                 <li>Responsive Design</li>
                 <li>Git & GitHub</li>
-                <li>UI Design</>
-                <li>Problem Solving</li>
+                <li>UI Design</li>
             </ul>
-        </section>
+        </div>
 
-        <section class="projects">
-            <h2>Projects</h2>
-            <div class="grid">
-                <article class="project-card">
-                    <h3>Personal Portfolio</h3>
-                    <p>This website, designed and built with HTML and CSS, hosted on GitHub Pages.</p>
-                </article>
-                <article class="project-card">
-                    <h3>Coming Soon</h3>
-                    <p>Currently working on my next project. Check back soon.</p>
-                </article>
-                <article class="project-card">
-                    <h3>Coming Soon</h3>
-                    <p>More projects on the way as I keep growing my skills.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="contact">
+        <div class="box">
             <h2>Get In Touch</h2>
             <p>Want to work together or just say hi? I'd love to hear from you.</p>
             <a href="mailto:babiryeshellah6@gmail.com" class="btn">Contact Me</a>
-        </section>
-
+        </div>
     </div>
 
 </body>
