@@ -1,179 +1,77 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babirye Shellah | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #0f1020;
-    background-image:
-        radial-gradient(circle at 15% 20%, rgba(120, 80, 220, 0.35), transparent 45%),
-        radial-gradient(circle at 85% 80%, rgba(0, 190, 255, 0.25), transparent 45%);
-    background-attachment: fixed;
-    color: #dcdcf0;
-    min-height: 100vh;
-    padding: 40px 20px;
-    line-height: 1.7;
-}
+    <div class="card">
 
-.card {
-    max-width: 900px;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 24px;
-    padding: 55px 45px;
-    backdrop-filter: blur(14px);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
-    animation: rise 0.9s ease both;
-}
+        <header class="hero">
+            <h1>Babirye Shellah</h1>
+            <p class="tagline">Web Developer | Computer Science Student</p>
+            <img src="profile.jpeg" alt="Babirye Shellah">
+            <p class="intro">
+                Computer Science student at the University of Nairobi.
+                I build clean, modern websites and love turning ideas into real things on the screen.
+            </p>
+        </header>
 
-@keyframes rise {
-    from { opacity: 0; transform: translateY(25px); }
-    to   { opacity: 1; transform: translateY(0); }
-}
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Babirye Shellah — a Computer Science student at the University of Nairobi.
+                I've been learning web development step by step: HTML, CSS, and how to
+                publish my work to the world using GitHub Pages.
+            </p>
+            <p>
+                I enjoy solving problems and the feeling of seeing a design come to life in the
+                browser. Every project teaches me something new, and I'm always looking for the
+                next thing to learn.
+            </p>
+        </section>
 
-.hero {
-    text-align: center;
-    padding-bottom: 30px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skill-list">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>C Programming</span>
+                <span>Responsive Design</span>
+                <span>Git and GitHub</span>
+                <span>UI Design</span>
+                <span>Problem Solving</span>
+            </div>
+        </section>
 
-h1 {
-    font-size: 2.8rem;
-    font-weight: 800;
-    letter-spacing: -1px;
-    background: linear-gradient(120deg, #7dd3fc 0%, #a78bfa 50%, #f472b6 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    margin-bottom: 10px;
-}
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="grid">
+                <article>
+                    <h3>Personal Portfolio</h3>
+                    <p>This website — designed and built with HTML and CSS, hosted on GitHub Pages.</p>
+                </article>
+                <article>
+                    <h3>Coming Soon</h3>
+                    <p>Currently working on my next project. Check back soon.</p>
+                </article>
+                <article>
+                    <h3>Coming Soon</h3>
+                    <p>More projects on the way as I keep growing my skills.</p>
+                </article>
+            </div>
+        </section>
 
-.tagline {
-    color: #9a9ac0;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 0.78rem;
-    margin-bottom: 28px;
-}
+        <section class="contact">
+            <h2>Get In Touch</h2>
+            <p>Want to work together or just say hi? I'd love to hear from you.</p>
+            <a href="mailto:babiryeshellah6@gmail.com" class="btn">Contact Me</a>
+        </section>
 
-img {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #a78bfa;
-    box-shadow: 0 0 45px rgba(167, 139, 250, 0.55);
-    display: block;
-    margin: 0 auto 25px;
-    transition: transform 0.4s ease;
-}
+    </div>
 
-img:hover { transform: scale(1.06) rotate(-3deg); }
-
-.intro {
-    max-width: 600px;
-    margin: 0 auto;
-    color: #b8b8d4;
-    font-size: 1.02rem;
-}
-
-section {
-    margin-top: 40px;
-}
-
-h2 {
-    font-size: 1.35rem;
-    color: #7dd3fc;
-    margin-bottom: 16px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
-
-p { color: #c4c4dc; margin-bottom: 10px; }
-
-.skill-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skill-list span {
-    background: rgba(167, 139, 250, 0.14);
-    border: 1px solid rgba(167, 139, 250, 0.4);
-    color: #d7c8ff;
-    padding: 7px 16px;
-    border-radius: 999px;
-    font-size: 0.88rem;
-    transition: all 0.25s ease;
-}
-
-.skill-list span:hover {
-    background: rgba(167, 139, 250, 0.35);
-    transform: translateY(-3px);
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 18px;
-}
-
-article {
-    background: rgba(255, 255, 255, 0.035);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    padding: 22px;
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-article:hover {
-    transform: translateY(-6px);
-    border-color: #a78bfa;
-}
-
-article h3 {
-    color: #f472b6;
-    font-size: 1.05rem;
-    margin-bottom: 8px;
-}
-
-article p {
-    font-size: 0.9rem;
-    color: #a6a6c4;
-    margin: 0;
-}
-
-.contact {
-    text-align: center;
-    margin-top: 45px;
-    padding-top: 35px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 14px 38px;
-    border-radius: 999px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #fff;
-    text-decoration: none;
-    background: linear-gradient(120deg, #7c3aed, #06b6d4);
-    box-shadow: 0 8px 30px rgba(124, 58, 237, 0.45);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 40px rgba(124, 58, 237, 0.7);
-}
-
-@media (max-width: 600px) {
-    .card { padding: 35px 22px; }
-    h1 { font-size: 2rem; }
-    img { width: 130px; height: 130px; }
-}
+</body>
+</html>
