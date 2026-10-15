@@ -4,26 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Babirye Shellah | Web Developer</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Styling is included right here -->
+    <style>
+        /* Import a clean modern font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        /* Main Card Container */
+        .card {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            padding: 50px 40px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #4a90e2;
+            box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #1a202c;
+            margin-bottom: 5px;
+            letter-spacing: -1px;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: #4a90e2;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            color: #4a5568;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 45px;
+        }
+
+        section h2 {
+            font-size: 1.6rem;
+            color: #1a202c;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #ebf4ff;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        section p {
+            margin-bottom: 15px;
+            color: #4a5568;
+            font-size: 1.05rem;
+        }
+
+        /* Skills Tags */
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            list-style: none;
+        }
+
+        .skill-list li {
+            background-color: #ebf4ff;
+            color: #2b6cb0;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .skill-list li:hover {
+            transform: translateY(-2px);
+            background-color: #dbeafe;
+        }
+
+        /* Projects Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #f8fafc;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            border-color: #cbd5e1;
+        }
+
+        .project-card h3 {
+            font-size: 1.15rem;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            margin: 0;
+            color: #718096;
+        }
+
+        /* Contact Button */
+        .contact {
+            text-align: center;
+            background-color: #f8fafc;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .contact p {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: #ffffff;
+            padding: 14px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(74, 144, 226, 0.2);
+        }
+
+        .btn:hover {
+            background-color: #357abd;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(74, 144, 226, 0.3);
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .card {
+                padding: 30px 20px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <div class="card">
 
         <header class="hero">
+            <img src="profile.jpeg" alt="Babirye Shellah" class="profile-pic">
             <h1>Babirye Shellah</h1>
-            <p class="tagline">Web Developer | Computer Science Student</p>
-            <img src="profile.jpeg" alt="Babirye Shellah">
+            <p class="tagline">Computer Science Student</p>
             <p class="intro">
-                Computer Science student at the University of Nairobi.
-            I build clean, modern websites and love turning ideas into real things on the screen.
+                I build clean, modern websites and love turning ideas into real things on the screen.
             </p>
         </header>
 
         <section class="about">
             <h2>About Me</h2>
             <p>
-                Hi, I'm Babirye Shellah, a Computer Science student at the University of Nairobi.
+                Hi, I'm Babirye Shellah, a Computer Science student.
                 I've been learning web development step by step: HTML, CSS, and how to
                 publish my work to the world using GitHub Pages.
             </p>
@@ -36,29 +226,29 @@
 
         <section class="skills">
             <h2>Skills</h2>
-            <div class="skill-list">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>C Programming</span>
-                <span>Responsive Design</span>
-                <span>Git and GitHub</span>
-                <span>UI Design</span>
-                <span>Problem Solving</span>
-            </div>
+            <ul class="skill-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>C Programming</li>
+                <li>Responsive Design</li>
+                <li>Git & GitHub</li>
+                <li>UI Design</li>
+                <li>Problem Solving</li>
+            </ul>
         </section>
 
         <section class="projects">
             <h2>Projects</h2>
             <div class="grid">
-                <article>
+                <article class="project-card">
                     <h3>Personal Portfolio</h3>
                     <p>This website, designed and built with HTML and CSS, hosted on GitHub Pages.</p>
                 </article>
-                <article>
+                <article class="project-card">
                     <h3>Coming Soon</h3>
                     <p>Currently working on my next project. Check back soon.</p>
                 </article>
-                <article>
+                <article class="project-card">
                     <h3>Coming Soon</h3>
                     <p>More projects on the way as I keep growing my skills.</p>
                 </article>
