@@ -4,28 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Babirye Shellah | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+
+    <div class="floating-element bow-1">🎀</div>
+    <div class="floating-element heart-1">💜</div>
+    <div class="floating-element sparkle-1">✨</div>
+
+    <nav class="navbar">
         <div class="logo">Shellah.</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <main class="fade-in">
-        <section class="hero">
-            <h1>Hi, I'm Babirye Shellah</h1>
-            <p>Welcome to my multi-page portfolio. I am a web developer focused on creating clean, functional, and animated web experiences.</p>
-            <a href="projects.html" class="btn">View My Work</a>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <span class="greeting">hiii, you found my corner <3</span>
+                <h1>I'm <span class="highlight">Shellah</span></h1>
+                <p>Web Developer & Creative Thinker</p>
+                <p class="bio">I make the complicated feel soft. I am a web developer focused on creating clean, functional, and animated web experiences.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="https://github.com/babiryeshellah6-bot" target="_blank" class="btn secondary">GitHub</a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="photo-frame">
+                    <img src="https://via.placeholder.com/300x400/c8a2c8/ffffff?text=Your+Photo+Here" alt="Babirye Shellah">
+                    <div class="frame-bow">🎀</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="about-card">
+                    <h3>Who I am</h3>
+                    <p>I am a computer science student with a goal-oriented mindset. I enjoy solving problems, delivering working solutions, and collaborating with others to build things that matter.</p>
+                </div>
+                <div class="about-card">
+                    <h3>What I like</h3>
+                    <p>I love creating clean, aesthetic designs. When I'm not coding, I enjoy exploring new tech trends, listening to music, and learning new things.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="card-content">
+                        <h3>🌮 Taco Shop Project</h3>
+                        <p><strong>What it does:</strong> A responsive web page for a local Taco Shop featuring a menu, contact form, and ordering interface.</p>
+                        <p><strong>What I learned:</strong> I learned how to structure HTML semantically, use CSS Flexbox/Grid for layout, and manage version control using Git from the start.</p>
+                        <a href="https://github.com/babiryeshellah6-bot/taco-shop-project" target="_blank" class="project-link">View Project →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-content">
+                        <h3>✨ Portfolio Website</h3>
+                        <p>This very website! Designed and built from scratch to showcase my skills and projects.</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Work With Me</h2>
+            <p>Have a project in mind? Send a brief!</p>
+            
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Tell me about your project..."></textarea>
+                </div>
+                <input type="hidden" name="source" value="portfolio_website" readonly>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Babirye Shellah. All rights reserved.</p>
+        <p>Built with 💜 by Babirye Shellah © 2026</p>
+        <div class="socials">
+            <a href="https://github.com/babiryeshellah6-bot" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/babirye.shellah" target="_blank">instagram / X</a>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
