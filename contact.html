@@ -3,42 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Babirye Shellah</title>
+    <title>Babirye Shellah | Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav>
+
+    <div class="floating-element bow-1">🎀</div>
+    <div class="floating-element heart-1">💜</div>
+    <div class="floating-element sparkle-1">✨</div>
+
+    <nav class="navbar">
         <div class="logo">Shellah.</div>
-        <ul>
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <main class="fade-in">
-        <h2>Contact Me</h2>
-        <p>I'd love to hear from you! Reach out via email or connect with me on social media.</p>
-        
-        <div class="contact-info">
-            <p>
-                <i class="fa-solid fa-envelope"></i> Email: 
-                <a href="mailto:babiryeshellah6@gmail.com">your-email@example.com</a>
-            </p>
-            <p>
-                <i class="fa-brands fa-github"></i> GitHub: 
-                <a href="https://github.com/babiryeshellah6-bot" target="_blank">github.com/babiryeshellah6-bot</a>
-            </p>
-            <p>
-                <i class="fa-brands fa-instagram"></i> Instagram: 
-                <a href="https://www.instagram.com/babirye.shellah" target="_blank">@babirye.shellah</a>
-            </p>
-        </div>
+    <main>
+        <section class="contact-section">
+            <h2>Work With Me</h2>
+            <p>Have a project in mind? Send a brief!</p>
+            
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Tell me about your project..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget">Estimated Budget (Optional)</label>
+                    <input type="text" id="budget" name="budget" placeholder="$">
+                </div>
+                
+                <input type="hidden" name="source" value="portfolio_website" readonly>
+                <input type="text" name="referral" value="Direct Link" readonly class="hidden-input">
+                
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Babirye Shellah. All rights reserved.</p>
+        <p>Built with 💜 by Babirye Shellah © 2026</p>
+        <div class="socials">
+            <a href="https://github.com/babiryeshellah6-bot" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/babirye.shellah" target="_blank">instagram / X</a>
+            <a href ="babiryeshellah6@gmail.com"target="_blank">email</a>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
