@@ -1,16 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
+    font-family: 'Inter', sans-serif;
     background-color: #12071f;
     color: #e0d4f5;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Poppins', sans-serif;
 }
 
 nav {
@@ -26,7 +32,7 @@ nav {
 nav .logo {
     color: #fff;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
     text-shadow: 0 0 10px #9b59b6;
 }
 
@@ -39,6 +45,7 @@ nav ul {
 nav ul li a {
     color: #b89bcf;
     text-decoration: none;
+    font-weight: 600;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
@@ -61,18 +68,24 @@ main {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     color: #d1a3ff;
     animation: pulseGlow 2s infinite alternate;
 }
 
 h2 {
+    font-size: 2rem;
     margin-bottom: 1.5rem;
     border-bottom: 2px solid #6a0dad;
     padding-bottom: 0.5rem;
     color: #d1a3ff;
     text-shadow: 0 0 8px rgba(155, 89, 182, 0.5);
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1rem;
 }
 
 .btn {
@@ -81,6 +94,7 @@ h2 {
     color: #fff;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
+    font-weight: 600;
     border-radius: 5px;
     border: 1px solid #9b59b6;
     margin-top: 1rem;
@@ -115,9 +129,19 @@ h2 {
     border-left: 5px solid #d1a3ff;
 }
 
+.project-card h3 {
+    margin-bottom: 0.5rem;
+    color: #d1a3ff;
+}
+
+.contact-info {
+    margin-top: 2rem;
+    line-height: 2.5;
+}
+
 .contact-info a {
     color: #d1a3ff;
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: none;
     transition: text-shadow 0.3s ease, color 0.3s ease;
 }
@@ -125,6 +149,13 @@ h2 {
 .contact-info a:hover {
     color: #fff;
     text-shadow: 0 0 15px #d1a3ff, 0 0 30px #9b59b6;
+}
+
+.contact-info i {
+    color: #d1a3ff;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    text-shadow: 0 0 8px rgba(155, 89, 182, 0.6);
 }
 
 footer {
