@@ -143,11 +143,11 @@ h1 {
     position: relative;
     width: 320px;
     height: 400px;
-    background: linear-gradient(135deg, var(--light-purple), var(--primary-pink));
+    background: linear-gradient(135deg, #d8b4e2, #b57edc);
     padding: 15px;
     border-radius: 20px;
     transform: rotate(3deg);
-    box-shadow: 0 0 25px  rgba(160, 32, 240, 0.7);
+    box-shadow: 0 0 15px #b57edc, 0 0 #d8b4e2;
     transition: transform 0.5s ease;
 }
 
