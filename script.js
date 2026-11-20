@@ -9,3 +9,12 @@ document.addEventListener('mousemove', (e) => {
         el.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
     });
 });
+window.addEventListener("load", function() {
+  const loader = document.getElementById("loader-wrapper");
+  setTimeout(() => {
+    loader.classList.add("fade-out");
+    setTimeout(() => {
+        loader.style.display = "none";
+    }, 800);
+  }, 1500); 
+});
